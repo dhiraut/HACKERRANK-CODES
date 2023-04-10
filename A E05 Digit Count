@@ -1,14 +1,12 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+def countDigit(n):
+    count = 0
+    if(n==0):
+        count=1
+    else:
+        while n != 0:
+            n //= 10
+            count += 1
+    return count
 
-public class Solution {
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int num = in.nextInt();
-        in.close();
-    }
-}
+n = int(input())
+print(countDigit(n))
