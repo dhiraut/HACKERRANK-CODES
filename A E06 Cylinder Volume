@@ -1,24 +1,14 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+#!/bin/python3
 
-public class Solution {
+import math
+import os
+import random
+import re
+import sys
 
 
 
-    private static final Scanner scanner = new Scanner(System.in);
+if __name__ == '__main__':
+    radius = int(input())
 
-    public static void main(String[] args) {
-        int radius = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        int height = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        scanner.close();
-    }
-}
+    height = int(input())
